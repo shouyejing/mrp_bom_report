@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <report 
+            string="BOM Structure With Cost Price"
+            id="action_report_bom_structure_with_costprice"
+            model="mrp.bom" 
+            name="mrp_bom_report.report_mrpbomstructure_with_costprice"
+            file="mrp_bom_report.report_mrpbomstructure_with_costprice"
+            report_type="qweb-pdf"
+        />
+
+
+
+
+    </data>
+</openerp>
