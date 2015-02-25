@@ -31,7 +31,7 @@
     'depends': ['mrp'],
     'description': """
 
-    mrp bom report
+    mrp bom report V1.15
 
     Add a new BOM report,which contains product costs in bom line.
 

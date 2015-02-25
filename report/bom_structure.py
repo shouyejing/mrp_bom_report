@@ -44,6 +44,7 @@ class bom_structure_with_costprice(report_sxw.rml_parse):
                 res['code'] = l.bom_id.code
                 res['price'] = l.product_id.product_tmpl_id.standard_price
                 res['total'] = l.product_qty * l.product_id.product_tmpl_id.standard_price
+                res['seller'] = l.product_id.product_tmpl_id.seller_ids[0].name.name if l.product_id.product_tmpl_id.seller_ids else 'Not Set'
                 result.append(res)
                 if l.child_line_ids:
                     if level < 6:
