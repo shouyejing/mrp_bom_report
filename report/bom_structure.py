@@ -37,6 +37,7 @@ class bom_structure_with_costprice(report_sxw.rml_parse):
             for l in object:
                 res = {}
                 res['pname'] = l.product_id.name
+                res['pdes'] = l.product_id.description
                 res['pcode'] = l.product_id.default_code
                 res['pqty'] = l.product_qty
                 res['uname'] = l.product_uom.name

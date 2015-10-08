@@ -12,6 +12,7 @@
                             <th>BOM Name</th>
                             <th>Quantity</th>
                             <th>BOM Ref</th>
+                            <th>商品描述</th>
                             <th>Price</th>
                             <th>Total</th>
                             <th>Seller</th>
@@ -34,6 +35,9 @@
                                 <td>
                                     <!--<span t-field="o.standard_price"/>-->
                                 </td>
+                                <!--<td>-->
+                                    <!--<span t-field="o.standard_price"/>-->
+                                <!--</td>-->
                                 <td/>
                                 <td/>
                             </tr>
@@ -49,6 +53,9 @@
                                 </td>
                                 <td>
                                     <span t-esc="l['code']"/>
+                                </td>
+                                <td>
+                                    <span t-esc="l['pdes']"/>
                                 </td>
                                 <td>
                                     <span t-esc="l['price']"/>
